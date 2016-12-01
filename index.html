@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=0.8, user-scalable=0">
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/jquery.fullpage.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/25537/45803/58282a8af629d8127c0d2c50.css' rel='stylesheet' type='text/css' />
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/25537/45803/58282b42f629d8127c0d2c51.css' rel='stylesheet' type='text/css' />
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/25537/45803/58282be2f629d8127c0d2c52.css' rel='stylesheet' type='text/css' />
+	<link href='//cdn.webfont.youziku.com/webfonts/nomal/25537/45803/58282c72f629d8127c0d2c53.css' rel='stylesheet' type='text/css' />
+	<style></style>
+	<title>BEELINE</title>
+</head>
+<body>
+	<nav id='nav'>
+		<div class="menu-container">
+			<div class="menu">
+				<ul class="menu-ul">
+					<li><a href="">BEELINE</a></li>
+					<li><a href="#">人员中心</a>
+						<ul>
+							<li><a href="#">飞行员</a></li>
+							<li><a href="#">机务</a></li>
+							<li><a href="#">路人甲</a></li>
+						</ul>
+					</li>
+					<li><a href="#">云集服务</a>
+						<ul>
+							<li><a href="#">飞行员手册服务</a></li>
+							<li><a href="#">航空器试航管理服务</a></li>
+							<li><a href="#">机组资源中心</a></li>
+						</ul>
+					</li>
+					<li><a href="#">随行市场</a>
+						<ul>
+							<li><a href="#">航材中心</a></li>
+							<li><a href="#">飞行周边</a></li>
+						</ul>
+					</li>
+				</ul>
+
+			</div>
+			<p class="nav-login">
+				<a href="">注册 </a> |
+				<a href=""> 登录</a>
+			</p>
+			
+		</div>
+	</nav>
+	<div id="fullpage">
+		<div class="section section1">
+			<h1 class="title1 css7020f764c63c1">随心而动</h1>
+			<div class="buttons row">
+				<div class="clearfix" style="margin-left:15%">
+					<a href="" class="btn btn-primary col-xs-8 col-md-3 col-lg-2">注册</a>
+					<a href="" class="btn btn-default col-xs-8 col-md-3 col-lg-2">登陆</a>
+				</div>
+
+			</div>
+		</div>
+		<div class="section section2">
+			<h1 class="title2 css70212447063c1">加入我们</h1>
+			<div class="sub-title-2 slide-left enter">
+				<span>体现个人专业能力的时候到了<br></span>
+				<span>单纯的上下班是否枯燥无味<br></span>
+				<span>额外的成就感和丰厚的收入<br></span>
+			</div>
+		</div>
+		<div class="section section3">
+			<h1 class="title3 css70214b43863c1">手册服务</h1>
+			<div class="sub-title-3">
+				<span>传统手册学习并不简单 &nbsp;&nbsp;</span>
+				<span>&nbsp;&nbsp; 云集服务给你更多便捷</span>
+			</div>
+		</div>
+		<div class="section section4">
+			<h1 class="title4 css70216e64a63c1">点对点! 更专业!</h1>
+			<div class="sub-title4-1">
+				<h3 id="subTitle1" class="scale-fade-in enter">自由的订单发布</h3>
+				<h3 id="subTitle2" class="scale-fade-in enter">专业的任务筛选</h3>
+				<h3 id="subTitle3" class="scale-fade-in enter">双向的订单选择</h3>
+				<h3 id="subTitle4" class="scale-fade-in enter">你! 就是主角!</h3>
+			</div>
+		</div>
+		<div class="section section5">
+			<div class="section-top">
+				这里看看些什么 给我一个文案
+			</div>
+			<div class="section-bottom">
+				这里看看些什么 给我一个文案
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<script src="js/jquery.fullpage.min.js"></script>
+	<script src="js/megamenu.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			$('#fullpage').fullpage({
+				 menu: '#myMenu',
+        //Scrolling
+        css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        fitToSectionDelay: 1000,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        continuousHorizontal: false,
+        scrollHorizontally: false,
+        interlockedSlides: false,
+        resetSliders: false,
+        fadingEffect: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        scrollOverflowOptions: null,
+        normalScrollElementTouchThreshold: 5,
+        bigSectionsDestination: null,
+
+        //Design
+        controlArrows: true,
+        verticalCentered: true,
+        sectionsColor : ['#ccc', '#fff','red'],
+        paddingTop: '3em',
+        paddingBottom: '10px',
+        fixedElements: '#nav',
+        
+        navigation:true,
+
+        //Custom selectors
+        sectionSelector: '.section',
+        slideSelector: '.slide',
+
+        //events
+        onLeave: function(index, nextIndex, direction){
+			index !=2 && $('.sub-title-2').removeClass('enter-active')
+			index !=3 && $('.sub-title-3').removeClass('enter-active')
+			index !=4 && $('.sub-title4-1 h3').removeClass('enter-active')
+		},
+        afterLoad: function(anchorLink, index){
+        	index ==2 && $('.sub-title-2').addClass('enter-active')
+        	index ==3 && $('.sub-title-3').addClass('enter-active')
+			if(index==4){
+        		$('#subTitle1').addClass('enter-active')
+				setTimeout(function(){
+					$('#subTitle2').addClass('enter-active')
+				},300)
+				setTimeout(function(){
+					$('#subTitle3').addClass('enter-active')
+				},600)
+				setTimeout(function(){
+					$('#subTitle4').addClass('enter-active')
+				},900)
+			}
+        	console.log(index)
+		},
+        afterRender: function(){},
+        afterResize: function(){},
+        afterResponsive: function(isResponsive){},
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+    });
+		});
+	</script>
+</body>
+</html>
