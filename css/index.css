@@ -83,6 +83,16 @@ html,body{
 .menu-container,.menu-ul{
 	width:60%;
 }
+.menu-ul>li>a{
+	color:inherit;
+}
+.menu-ul>li:hover{
+	background:rgba(0, 0, 0, 0.5) !important;
+	color:#fff;
+}
+.menu-ul a:hover{
+	color:#fff;
+}
 .menu-ul>li>ul{
 	background:rgba(0, 0, 0, 0.5) !important;
 	color:#fff;
@@ -156,13 +166,62 @@ html,body{
 .section-bottom{
 	position: absolute;
     bottom: 0;
-    height: 200px;
+    height: 100px;
     background-color: #333;
     color:#fff;
     width:100%;
 }
+.section-bottom a{
+	color:#fff;
+}
+.bottom-box{
+	text-align: center;
+	margin-top:30px;
+}
+/*向下箭头*/
 
 
+.arrow:after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-width: 0 1px 1px 0;
+    left: 50%;
+    bottom: 100px; 
+    z-index: 9999;
+    -webkit-transform: rotate(45deg) translate(-20%, 0);
+    transform: rotate(45deg) translate(-20%, 0);
+    -webkit-animation: arrowGo 3s infinite steps(5, end);
+    animation: arrowGo 3s infinite steps(5, end)
+}
+@-webkit-keyframes arrowGo {
+    0%{
+        opacity: 0.5; 
+        -webkit-transform-origin: center center; 
+        -webkit-transform: rotate(45deg) translate(-20%, 0)
+    }
+    100%{
+        opacity: 1;
+        -webkit-transform-origin:center center;
+        -webkit-transform: rotate(45deg) translate(-20%, 0) scale(2);
+        bottom: 50px
+    }
+}
+@keyframes arrowGo {
+    0% {
+        opacity: 0.5;
+        transform-origin: center center;
+        transform: rotate(45deg) translate(-20%, 0)
+    }
+    100% {
+        opacity: 1;
+        transform-origin: center center;
+        transform: rotate(45deg) translate(-20%, 0) scale(2);
+        bottom: 50px;
+    }
+}
 
 
 

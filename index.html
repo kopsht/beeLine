@@ -44,14 +44,14 @@
 
 			</div>
 			<p class="nav-login">
-				<a href="">注册 </a> |
-				<a href=""> 登录</a>
+				<a href="login.html#toregister">注册 </a> |
+				<a href="login.html"> 登录</a>
 			</p>
 			
 		</div>
 	</nav>
 	<div id="fullpage">
-		<div class="section section1">
+		<div class="section arrow section1">
 			<h1 class="title1 css7020f764c63c1">随心而动</h1>
 			<div class="buttons row">
 				<div class="clearfix" style="margin-left:15%">
@@ -61,7 +61,7 @@
 
 			</div>
 		</div>
-		<div class="section section2">
+		<div class="section arrow section2">
 			<h1 class="title2 css70212447063c1">加入我们</h1>
 			<div class="sub-title-2 slide-left enter">
 				<span>体现个人专业能力的时候到了<br></span>
@@ -69,14 +69,14 @@
 				<span>额外的成就感和丰厚的收入<br></span>
 			</div>
 		</div>
-		<div class="section section3">
+		<div class="section arrow section3">
 			<h1 class="title3 css70214b43863c1">手册服务</h1>
 			<div class="sub-title-3">
 				<span>传统手册学习并不简单 &nbsp;&nbsp;</span>
 				<span>&nbsp;&nbsp; 云集服务给你更多便捷</span>
 			</div>
 		</div>
-		<div class="section section4">
+		<div class="section arrow section4">
 			<h1 class="title4 css70216e64a63c1">点对点! 更专业!</h1>
 			<div class="sub-title4-1">
 				<h3 id="subTitle1" class="scale-fade-in enter">自由的订单发布</h3>
@@ -90,7 +90,15 @@
 				这里看看些什么 给我一个文案
 			</div>
 			<div class="section-bottom">
-				这里看看些什么 给我一个文案
+				<div class="bottom-box">
+					<a href="">关于我们</a> ｜ 
+					<a target="_blank" href="subpage/relief.html">免责声明</a> ｜ 
+					<a href="">其他</a> ｜ 
+					<a href="">其他另外</a> ｜ 
+					<a href="">剩下一些</a> ｜ 
+					<a href="">其他</a> 
+				</div>
+
 			</div>
 		</div>
 
@@ -108,7 +116,7 @@
 		$(document).ready(function() {
 
 			$('#fullpage').fullpage({
-				 menu: '#myMenu',
+				menu: '#myMenu',
         //Scrolling
         css3: true,
         scrollingSpeed: 700,
@@ -149,27 +157,27 @@
 
         //events
         onLeave: function(index, nextIndex, direction){
-			index !=2 && $('.sub-title-2').removeClass('enter-active')
-			index !=3 && $('.sub-title-3').removeClass('enter-active')
-			index !=4 && $('.sub-title4-1 h3').removeClass('enter-active')
-		},
+        	index !=2 && $('.sub-title-2').removeClass('enter-active')
+        	index !=3 && $('.sub-title-3').removeClass('enter-active')
+        	index !=4 && $('.sub-title4-1 h3').removeClass('enter-active')
+        },
         afterLoad: function(anchorLink, index){
         	index ==2 && $('.sub-title-2').addClass('enter-active')
         	index ==3 && $('.sub-title-3').addClass('enter-active')
-			if(index==4){
+        	if(index==4){
         		$('#subTitle1').addClass('enter-active')
-				setTimeout(function(){
-					$('#subTitle2').addClass('enter-active')
-				},300)
-				setTimeout(function(){
-					$('#subTitle3').addClass('enter-active')
-				},600)
-				setTimeout(function(){
-					$('#subTitle4').addClass('enter-active')
-				},900)
-			}
+        		setTimeout(function(){
+        			$('#subTitle2').addClass('enter-active')
+        		},300)
+        		setTimeout(function(){
+        			$('#subTitle3').addClass('enter-active')
+        		},600)
+        		setTimeout(function(){
+        			$('#subTitle4').addClass('enter-active')
+        		},900)
+        	}
         	console.log(index)
-		},
+        },
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},
